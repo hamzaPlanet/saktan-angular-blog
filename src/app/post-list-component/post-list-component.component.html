@@ -1,0 +1,8 @@
+<li [ngClass]="myClassObject()">
+    <h4 class="float-left">{{postTitle}}</h4>
+    <span class="float-right">{{created_at | date : 'short'}}</span>
+    <div class="clearfix"></div>
+    <p>{{postContent}}</p>
+    <button (click)="loveIt()" class="btn btn-success btn-xs" >Love It !</button> &nbsp; <button (click)="dontLoveIt()" class="btn btn-danger btn-xs">Dont Love It !!!</button>
+    <p class="float-right">{{loveIts}}</p>
+</li>
